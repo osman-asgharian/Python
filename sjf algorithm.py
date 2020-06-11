@@ -1,3 +1,19 @@
+...
+SJF:(Shortest Job First) Algorithm by Python
+Coder Osman Asgharian
+The task is to find the Average Waiting Time and Average Turnaround Time of the given processes with their Burst Time using SJF Scheduling Algorithm.
+SJF is a scheduling policy that selects the waiting process with the smallest execution time to execute next.
+Priority Scheduling is a Non Pre-emptive and Pre-emptive Algorithm, hence the process which has the Least Burst Time is selected first.
+Here we are considering Pre-emptive version of Priority Scheduling, hence the process which has the Least Burst Time will be served first and will be continued to be served till there is any other process with Lower Burst Time priority.
+If there is any process with Lower Burst Time, then switch the process.
+Start Time: Time at which the execution of the process starts
+Completion Time: Time at which the process completes its execution
+Turnaround Time: Completion Time - Arrival Time
+Waiting Time: Turnaround Time - Burst Time
+I have made use of 2 queues in the code:
+Ready Queue: It stores all the processes which have already arrived.
+Normal Queue: It stores all the processes which have not arrived yet.
+...
 class SJF:
 
     def processData(self, num_p):
