@@ -1,0 +1,13 @@
+class SJF:
+    def Process_data(self,num_process):
+    p_data=[]
+    for i in range(num_process):
+        tmp=[]
+        p_id=int(input("Enter Process ID :"))
+        arrival_time=int(input("Enter Arrival Time for process {p_id}:"))
+        burst_time=int(input("Enter Burst Time for process {p_id}:"))
+        #tmp.extend([p_id, arrival_time, burst_time, 0, burst_time])
+        tmp.extend(p_id,arrival_time,burst_time,0,burst_time)
+        #
+        p_data.append(tmp)
+    SJF.schedulingProcess(self, p_data)
