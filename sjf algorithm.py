@@ -1,4 +1,4 @@
-...
+'''
 SJF:(Shortest Job First) Algorithm by Python
 Coder Osman Asgharian
 The task is to find the Average Waiting Time and Average Turnaround Time of the given processes with their Burst Time using SJF Scheduling Algorithm.
@@ -13,7 +13,7 @@ Waiting Time: Turnaround Time - Burst Time
 I have made use of 2 queues in the code:
 Ready Queue: It stores all the processes which have already arrived.
 Normal Queue: It stores all the processes which have not arrived yet.
-...
+'''
 class SJF:
 
     def processData(self, num_p):
